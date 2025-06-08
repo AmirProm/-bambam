@@ -14,5 +14,5 @@ public record AppUser
     [Length(8, 22)] string Password,
     [Length(8, 22)] string ConfirmPassword,
      int Age,
-     contactinfo Contactinfo
+     Contactinfo Contactinfo
 );

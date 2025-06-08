@@ -1,6 +1,6 @@
 namespace api.Models;
 
-public record contactinfo
+public record Contactinfo
 (
    string Avatar,
    string Bio,

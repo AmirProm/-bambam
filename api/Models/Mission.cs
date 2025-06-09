@@ -8,8 +8,7 @@ public record Mission
     [property: BsonId, BsonRepresentation(BsonType.ObjectId)]
     string? Id,
     ObjectId UserId,
-    string Task,
+    string Task, //تسک های مربوط به هر شخص
     bool IsCompleted,
-    DateTime CreatedAt 
-    
+    DateTime CreatedAt   
 );

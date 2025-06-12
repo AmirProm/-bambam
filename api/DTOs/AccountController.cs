@@ -15,12 +15,12 @@ public class AccountController(IAccountRepository accountRepository) : Controlle
     public async Task<ActionResult<Loggind>> Register(AppUser userInput, CancellationToken cancellationToken)
     {
         if (userInput.Password != userInput.ConfirmPassword)
-            return BadRequest("Passsword mach ne dorst kon");
+            return BadRequest("Your passwords do not match!");
 
         Loggind? loggedInDto = await accountRepository.RegisterAsync(userInput, cancellationToken);
 
         if (loggedInDto is null)
-            return BadRequest("Email alredy dorst kon");
+            return BadRequest("This email is already taken.");
 
         return Ok(loggedInDto);
     }
@@ -31,7 +31,7 @@ public class AccountController(IAccountRepository accountRepository) : Controlle
         Loggind? loggedInDto = await accountRepository.LoginAsync(userInput, cancellationToken);
 
         if (loggedInDto is null)
-            return BadRequest("Email ya Password estebah");
+            return BadRequest("Email or Password is wrong");
 
         return loggedInDto;
     }
@@ -42,7 +42,7 @@ public class AccountController(IAccountRepository accountRepository) : Controlle
         DeleteResult? deleteResult = await accountRepository.DeleteByIdAsync(userId, cancellationToken);
 
         if (deleteResult is null)
-            return BadRequest("ID namojod");
+            return BadRequest("Operation failed");
 
         return deleteResult;
     }

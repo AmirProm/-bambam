@@ -35,7 +35,6 @@ public class AccountRepository : IAccountRepository
         return loggedInDto;
     }
 
-
     public async Task<Loggind?> LoginAsync(LoginDto userInput, CancellationToken cancellationToken)
     {
 

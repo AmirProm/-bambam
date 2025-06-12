@@ -24,7 +24,7 @@ builder.Services.AddSingleton<IMongoClient>(serviceProvider =>
 });
 #endregion MongoDbSettings
 
-#region Cors: baraye ta'eede Angular HttpClient requestsuy
+#region Cors: baraye ta'eede Angular HttpClient requestsy
 builder.Services.AddCors(options =>
     {
         options.AddDefaultPolicy(policy =>

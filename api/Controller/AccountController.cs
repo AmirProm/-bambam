@@ -36,14 +36,14 @@ public class AccountController(IAccountRepository accountRepository) : Controlle
         return loggedInDto;
     }
 
-    // [HttpDelete("delete/{userId}")]
-    // public async Task<ActionResult<DeleteResult>> DeleteById(string userId, CancellationToken cancellationToken)
-    // {
-    //     DeleteResult? deleteResult = await accountRepository.DeleteByIdAsync(userId, cancellationToken);
+    [HttpDelete("delete/{userId}")]
+    public async Task<ActionResult<DeleteResult>> DeleteById(string userId, CancellationToken cancellationToken)
+    {
+        DeleteResult? deleteResult = await accountRepository.DeleteByIdAsync(userId, cancellationToken);
 
-    //     if (deleteResult is null)
-    //         return BadRequest("Operation failed");
+        if (deleteResult is null)
+            return BadRequest("Operation failed");
 
-    //     return deleteResult;
-    // }
+        return deleteResult;
+    }
 }

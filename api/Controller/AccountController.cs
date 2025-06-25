@@ -9,7 +9,6 @@ namespace api.DTOs;
 [Route("api/[controller]")]
 public class AccountController(IAccountRepository accountRepository) : ControllerBase
 {
-    
 
     [HttpPost("register")] // List<AppUser> appUsers = await _collection.Find(new BsonDocument()).ToListAsync(cancellationToken);
     public async Task<ActionResult<Loggind>> Register(AppUser userInput, CancellationToken cancellationToken)
@@ -23,7 +22,7 @@ public class AccountController(IAccountRepository accountRepository) : Controlle
             return BadRequest("This email is already taken.");
 
         return Ok(loggedInDto);
-     }
+    }
 
     [HttpPost("login")]
     public async Task<ActionResult<Loggind>> Login(LoginDto userInput, CancellationToken cancellationToken)

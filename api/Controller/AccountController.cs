@@ -23,7 +23,7 @@ public class AccountController(IAccountRepository accountRepository) : Controlle
             return BadRequest("This email is already taken.");
 
         return Ok(loggedInDto);
-    // }
+     }
 
     // [HttpPost("login")]
     // public async Task<ActionResult<Loggind>> Login(LoginDto userInput, CancellationToken cancellationToken)

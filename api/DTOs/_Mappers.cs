@@ -2,7 +2,7 @@ namespace api.DTOs;
 
 public static class Mappers
 {
-    public static Loggind ConvertAppUserToLoggedInDto(AppUser appUser, string tokenValue)
+    public static LoggInDto ConvertAppUserToLoggedInDto(AppUser appUser, string tokenValue)
     {
 
         return new(

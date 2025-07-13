@@ -1,7 +1,3 @@
-using api.DTOs;
-using api.Models;
-using MongoDB.Driver;
-
 namespace api.Interfaces;
 
 public interface IAccountRepository

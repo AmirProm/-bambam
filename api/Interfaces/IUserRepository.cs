@@ -1,6 +1,3 @@
-using api.Models;
-using api.DTOs;
-
 namespace api.Interfaces;
 
 public interface IUserRepository

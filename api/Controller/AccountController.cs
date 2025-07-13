@@ -2,7 +2,7 @@ namespace api.DTOs;
 
 [ApiController]
 [Route("api/[controller]")]
-public class AccountController(IAccountRepository accountRepository) : ControllerBase
+public class AccountController(IAccountRepository accountRepository) : BaseApiController
 {
 
     [HttpPost("register")] // List<AppUser> appUsers = await _collection.Find(new BsonDocument()).ToListAsync(cancellationToken);

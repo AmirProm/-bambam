@@ -1,5 +1,4 @@
 namespace api.Models;
-
 public record Follower
 (
     string FollowerId,

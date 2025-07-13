@@ -1,8 +1,4 @@
-using MongoDB.Bson;
-using MongoDB.Bson.Serialization.Attributes;
-
 namespace api.Models;
-
 public record MassageRoom
 (
     [property: BsonId, BsonRepresentation(BsonType.ObjectId)]

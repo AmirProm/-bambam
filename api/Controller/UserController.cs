@@ -9,7 +9,7 @@ public class UserController(IUserRepository userRepository) : BaseApiController
         LoggInDto? loggedInDto = await userRepository.UpdateByIdAsync(userId, userInput, cancellationToken);
 
         if (loggedInDto is null)
-            return BadRequest("Operation failed.");
+            return BadRequest("Operation fild.");
 
         return loggedInDto;
     }   

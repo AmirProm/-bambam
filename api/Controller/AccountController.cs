@@ -1,8 +1,3 @@
-using api.Interfaces;
-using api.Models;
-using Microsoft.AspNetCore.Mvc;
-using MongoDB.Driver;
-
 namespace api.DTOs;
 
 [ApiController]

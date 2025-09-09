@@ -6,6 +6,7 @@ global using Microsoft.AspNetCore.Authentication.JwtBearer;
 global using Microsoft.Extensions.Options;
 global using Microsoft.IdentityModel.Tokens;
 global using MongoDB.Driver;
+global using api.Extensions;
 //programr.cs Using
 global using api.Settings;
 global using Microsoft.AspNetCore.Mvc;

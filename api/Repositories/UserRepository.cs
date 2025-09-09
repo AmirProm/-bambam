@@ -39,9 +39,4 @@ public class UserRepository : IUserRepository
 
         return Mappers.ConvertAppUserToLoggedInDto(appUser, token);
     }
-
-    Task<LoggInDto?> IUserRepository.UpdateByIdAsync(string userId, AppUser userInput, CancellationToken cancellationToken)
-    {
-        throw new NotImplementedException();
-    }
 }

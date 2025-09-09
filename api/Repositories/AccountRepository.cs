@@ -27,7 +27,7 @@ public class AccountRepository : IAccountRepository
 
         await _collection.InsertOneAsync(userInput, null, cancellationToken);
 
-        string? token =  _tokenService.CreateToken(userInput);
+        string? token = _tokenService.CreateToken(userInput);
 
         return Mappers.ConvertAppUserToLoggedInDto(userInput, token);
 
@@ -46,7 +46,7 @@ public class AccountRepository : IAccountRepository
         if (user is null)
             return null;
 
-        string? token =  _tokenService.CreateToken(user);
+        string? token = _tokenService.CreateToken(user);
 
         return Mappers.ConvertAppUserToLoggedInDto(user, token);
 
@@ -66,6 +66,16 @@ public class AccountRepository : IAccountRepository
         }
 
         return await _collection.DeleteOneAsync<AppUser>(doc => doc.Id == userId, cancellationToken);
+    }
+    
+    public async Task<LoggInDto?> ReloadLoggedInUserAsync(string userId, string token, CancellationToken cancellationToken)
+    {
+        AppUser? appUser = await _collection.Find<AppUser>(doc => doc.Id == userId).FirstOrDefaultAsync(cancellationToken);
+
+        if (appUser is null)
+            return null;
+
+        return Mappers.ConvertAppUserToLoggedInDto(appUser, token);
     }
 
 }

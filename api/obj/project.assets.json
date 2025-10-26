@@ -1576,11 +1576,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/amir-safai/Desktop/-bambam/api/api.csproj",
+      "projectUniqueName": "/home/amir-safai/Desktop/-bambam1/api/api.csproj",
       "projectName": "api",
-      "projectPath": "/home/amir-safai/Desktop/-bambam/api/api.csproj",
+      "projectPath": "/home/amir-safai/Desktop/-bambam1/api/api.csproj",
       "packagesPath": "/home/amir-safai/.nuget/packages/",
-      "outputPath": "/home/amir-safai/Desktop/-bambam/api/obj/",
+      "outputPath": "/home/amir-safai/Desktop/-bambam1/api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/amir-safai/.nuget/NuGet/NuGet.Config"
@@ -1601,7 +1601,13 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -1635,6 +1641,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.20, 8.0.20]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.linux-x64",
+            "version": "[8.0.20, 8.0.20]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.20, 8.0.20]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -1643,7 +1663,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.119/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/amir-safai/.dotnet/sdk/9.0.305/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

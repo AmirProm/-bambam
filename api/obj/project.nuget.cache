@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EFTHhJjFJxakMQKJVXGd4tqR/lBBbkk/e3uiUH4Qn2iF2DRAANIqpIdTzR4CrEskfV80hbEl4bDE7uY+EkX8eQ==",
+  "dgSpecHash": "Pootlwc713g=",
   "success": true,
-  "projectFilePath": "/home/amir-safai/Desktop/-bambam/api/api.csproj",
+  "projectFilePath": "/home/amir-safai/Desktop/-bambam1/api/api.csproj",
   "expectedPackageFiles": [
     "/home/amir-safai/.nuget/packages/awssdk.core/3.7.100.14/awssdk.core.3.7.100.14.nupkg.sha512",
     "/home/amir-safai/.nuget/packages/awssdk.securitytoken/3.7.100.14/awssdk.securitytoken.3.7.100.14.nupkg.sha512",
@@ -36,7 +36,10 @@
     "/home/amir-safai/.nuget/packages/system.runtime.compilerservices.unsafe/5.0.0/system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
     "/home/amir-safai/.nuget/packages/system.security.accesscontrol/5.0.0/system.security.accesscontrol.5.0.0.nupkg.sha512",
     "/home/amir-safai/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512",
-    "/home/amir-safai/.nuget/packages/zstdsharp.port/0.7.3/zstdsharp.port.0.7.3.nupkg.sha512"
+    "/home/amir-safai/.nuget/packages/zstdsharp.port/0.7.3/zstdsharp.port.0.7.3.nupkg.sha512",
+    "/home/amir-safai/.nuget/packages/microsoft.netcore.app.ref/8.0.20/microsoft.netcore.app.ref.8.0.20.nupkg.sha512",
+    "/home/amir-safai/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.20/microsoft.aspnetcore.app.ref.8.0.20.nupkg.sha512",
+    "/home/amir-safai/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.20/microsoft.netcore.app.host.linux-x64.8.0.20.nupkg.sha512"
   ],
   "logs": []
 }
